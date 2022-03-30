@@ -25,6 +25,7 @@
 ***
 ## 3월 30일
 
-- css 공부
+css
+- styled-components 공부
 
 매주 금요일까지
