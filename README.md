@@ -28,7 +28,7 @@
 css
 - styled-components 공부
 - react hook 공부
-- 
+
 ```jsx
 import React, { useState, useEffect } from "react";
 import styled, { createGlobalStyle } from "styled-components";
