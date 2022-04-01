@@ -25,7 +25,7 @@
 ***
 ## 3월 30일
 
-css
+- css 공부
 - styled-components 공부
 - react hook 공부
 
