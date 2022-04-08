@@ -14,9 +14,10 @@
 
 
 [ 개발일지 ]
-## 4월 06일
+## 4월 06일!
+
 - [XD 페이지 디자인] (https://xd.adobe.com/view/a9de9c2c-8ce8-43a6-85c0-9913bf38e068-fc8d/)
-- [카카오지도 api] (https://blogfiles.pstatic.net/MjAyMjA0MDhfMTQw/MDAxNjQ5NDI4Mzc0MDQ2.HcN4ez-8dS63DUtgQiMRM_F3xdq1p0jzJK_OUywUdoQg.rks_i0curOuSwrFP5ta5w68s5B7HfjpDM1mB4h1hzL8g.JPEG.alsl970/%EC%B9%B4%EC%B9%B4%EC%98%A4%EB%A7%B5.JPG?type=w2)
+- 카카오지도 api
 ```jsx
 const options = {
   center: new window.kakao.maps.LatLng(37.512259196344, 126.72065257372), //지도의 중심좌표.
@@ -31,6 +32,8 @@ function App() {
     return () => {};
   }, []);
 ```
+![카카오맵](https://user-images.githubusercontent.com/89895926/162458564-ea722f41-60dd-4972-b0aa-b59012adabba.JPG)
+
 ## 3월 30일
 
 - css 공부
