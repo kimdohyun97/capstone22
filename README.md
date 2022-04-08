@@ -14,6 +14,23 @@
 
 
 [ 개발일지 ]
+## 4월 06일
+- [XD 페이지 디자인] (https://xd.adobe.com/view/a9de9c2c-8ce8-43a6-85c0-9913bf38e068-fc8d/)
+- 카카오지도 api
+```jsx
+const options = {
+  center: new window.kakao.maps.LatLng(37.512259196344, 126.72065257372), //지도의 중심좌표.
+  level: 3,
+};
+
+function App() {
+  const container = useRef(null);
+
+  useEffect(() => {
+    new window.kakao.maps.Map(container.current, options); 
+    return () => {};
+  }, []);
+```
 ## 3월 30일
 
 - css 공부
