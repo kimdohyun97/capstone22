@@ -12,7 +12,7 @@
 - 작품소개 : 전기차 충전소위치/ 전기차소개
 - 작품의 특징
 
-
+***
 [ 개발일지 ]
 ## 4월 13일
 
@@ -76,7 +76,7 @@ const Menu = styled.div`
 ` ;
 ```
 ![home](https://blogfiles.pstatic.net/MjAyMjA0MTVfMTUg/MDAxNjUwMDMzOTY2Nzg0.aF0Vnj1zttP9xX2lojHmy1FpFrQ5LtohTI8SCnZsg8wg.XIJ5bVRcwNztRqFC1IC4p9sx_EnfctG4-m4964TIYkgg.JPEG.alsl970/dee.JPG)
-
+***
 ## 4월 06일
 
 - [XD 페이지 디자인] (https://xd.adobe.com/view/a9de9c2c-8ce8-43a6-85c0-9913bf38e068-fc8d/)
@@ -97,7 +97,7 @@ function App() {
 ```
 ![evcar](https://user-images.githubusercontent.com/89895926/162460055-5c7be7c1-f69e-4ff2-bcf8-7c9edf6cb1d6.png)
 
-
+***
 ## 3월 30일
 
 - css 공부
