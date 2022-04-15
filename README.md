@@ -16,13 +16,13 @@
 [ 개발일지 ]
 ## 4월 13일
 
--백그라운드 영상 넣기
+- 백그라운드 영상 넣기
 ```jsx
   <video autoPlay muted loop width="100%">
     <source src={bgImage} type="video/mp4"/>
   </video>
 ```
--Navbar 디자인
+- 홈화면 틀잡기
 ```jsx
 const Navbar = () => {
   return (
