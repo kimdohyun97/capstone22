@@ -170,7 +170,7 @@ const Body = styled.div`
 
 export default Home;
 ```
-
+***
 ## 3월 23일
 
 - 아이디어 정리 
