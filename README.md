@@ -14,7 +14,70 @@
 
 
 [ 개발일지 ]
-## 4월 06일!
+## 4월 13일
+
+-백그라운드 영상 넣기
+```jsx
+  <video autoPlay muted loop width="100%">
+    <source src={bgImage} type="video/mp4"/>
+  </video>
+```
+-Navbar 디자인
+```jsx
+const Navbar = () => {
+  return (
+    <Nav>
+      <Logo src={Logoimg} />
+      <Menu>
+        <MenuLink href="">전기차소개</MenuLink>
+        <MenuLink href="">보조금지원</MenuLink>
+        <MenuLink href="">충전소찾기</MenuLink>
+        <MenuLink href="">전기차추천</MenuLink>
+      </Menu>
+    </Nav>
+  );
+};
+
+const Nav = styled.div`
+  background-color: white;
+  width: 100%;
+  height: 80px;
+  text-transform:uppercase;
+  padding: 0 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  opacity: 50px;
+  position: fixed;
+  box-shadow: 0px 0px 10px 0px #000 ;
+  z-index: 1;
+`;
+
+const Logo = styled.img`
+  width: 170px;
+  height: 40px;
+  margin-left: 10em;
+`
+
+const MenuLink = styled.a`
+  margin-right: 10em;
+  padding: 0;
+  cursor: pointer;
+  text-decoration: none;
+  color: gray;
+`;
+
+const Menu = styled.div`
+  display:flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+` ;
+```
+![home](https://blogfiles.pstatic.net/MjAyMjA0MTVfMTUg/MDAxNjUwMDMzOTY2Nzg0.aF0Vnj1zttP9xX2lojHmy1FpFrQ5LtohTI8SCnZsg8wg.XIJ5bVRcwNztRqFC1IC4p9sx_EnfctG4-m4964TIYkgg.JPEG.alsl970/dee.JPG)
+
+## 4월 06일
 
 - [XD 페이지 디자인] (https://xd.adobe.com/view/a9de9c2c-8ce8-43a6-85c0-9913bf38e068-fc8d/)
 - 카카오지도 api
