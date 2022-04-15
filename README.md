@@ -69,7 +69,8 @@ const MenuLink = styled.a`
   color: gray;
 `;
 ```
-- 홈화면
+- 홈화면 틀잡기 <br>
+
 ![home](https://blogfiles.pstatic.net/MjAyMjA0MTVfMTUg/MDAxNjUwMDMzOTY2Nzg0.aF0Vnj1zttP9xX2lojHmy1FpFrQ5LtohTI8SCnZsg8wg.XIJ5bVRcwNztRqFC1IC4p9sx_EnfctG4-m4964TIYkgg.JPEG.alsl970/dee.JPG)
 ***
 ## 4월 06일
