@@ -39,7 +39,6 @@ const tabContArr=[
         }
     ];
     
-    
  const tabClickHandler=(index)=>{
  	setActiveIndex(index)
  }
@@ -57,9 +56,10 @@ const tabContArr=[
     </div>
 );
 ```
-- 전기차 소개페이지 디자인
+- 전기차 소개페이지 디자인 <br />
 ![1](https://blogfiles.pstatic.net/MjAyMjA1MDZfMTY5/MDAxNjUxODI3MzExMjY5.vY3-gG-7Lf10F55gVUxGP0cREWixwZ7_sndHW2iD5z0g.mmUJ78lnuumP0aDHcJpja9Sb3UbduZ9Z0FSK_wE0-Xcg.PNG.alsl970/1.png?type=w2)
-
+![2](https://blogfiles.pstatic.net/MjAyMjA1MDZfODcg/MDAxNjUxODI3MzExNTUz.m671B984ZRv0Jwn_CpTdSmM0rSNdf5eBSFpUByRttXMg.NPN4OXHX4JpYegkX6xc7RqA2rKsghntoyr3yCZG16j0g.PNG.alsl970/2.png?type=w2)
+![3](https://blogfiles.pstatic.net/MjAyMjA1MDZfNzIg/MDAxNjUxODI3MzExODg4.6hdQx0ySqCObuqivPFPnEA6WiJduo8Ir7quQTRAhbhsg.drKSecd9J0VKPTGyboAey8r5tHhL6fBPvIaKoo_9ZdMg.PNG.alsl970/3.png?type=w2)
 ***
 ## 4월 13일
 
