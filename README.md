@@ -14,6 +14,53 @@
 
 ***
 [ 개발일지 ]
+## 5월 06일
+- 전기차소개 페이지에 Tab기능넣기
+- React hooks로 Tab기능구현
+```jsx
+const [activeIndex, setActiveIndex] = useState(0);
+
+const tabContArr=[
+        {
+            tabTitle:(
+                <li onClick={()=>tabClickHandler(0)}> 탭1 </li>
+            ),
+            tabCont:(
+                <div>탭1 내용</div>
+            )
+        },
+        {
+            tabTitle:(
+                <li onClick={()=>tabClickHandler(1)}> 탭2 </li>
+            ),
+            tabCont:(
+                <div>탭2 내용</div>
+            )
+        }
+    ];
+    
+    
+ const tabClickHandler=(index)=>{
+ 	setActiveIndex(index)
+ }
+ 
+ return (
+    <ul className="tabs is-boxed">
+	    {tabContArr.map((section, index)=>{
+		    return section.tabTitle
+	    })}
+    </ul>
+    
+    // activeIndex의 탭콘트만 보여줌!
+    <div>
+	    { tabContArr[activeIndex].tabCont }
+    </div>
+);
+```
+- 전기차 소개페이지 디자인
+![1](https://blogfiles.pstatic.net/MjAyMjA1MDZfMTY5/MDAxNjUxODI3MzExMjY5.vY3-gG-7Lf10F55gVUxGP0cREWixwZ7_sndHW2iD5z0g.mmUJ78lnuumP0aDHcJpja9Sb3UbduZ9Z0FSK_wE0-Xcg.PNG.alsl970/1.png?type=w2)
+
+***
 ## 4월 13일
 
 - 백그라운드 영상 넣기
