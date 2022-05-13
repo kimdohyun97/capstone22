@@ -14,7 +14,45 @@
 
 ***
 [ 개발일지 ]
-## 5월 06일
+## 5월 11일
+- JavaScript 웹 크롤링
+- 전기차 구매보조금지원 페이지 크롤링
+```jsx
+const axios = require("axios");
+const cheerio = require("cheerio");
+
+// axios를 활용해 AJAX로 HTML 문서를 가져오는 함수 구현
+const getHTML = async () => {
+  try {
+    return await axios.get("https://www.ev.or.kr/portal/buyersGuide/incenTive");
+  } catch (error) {
+    console.error(error);
+  }
+}
+
+getHTML()
+  .then((html) => {
+    const $ = cheerio.load(html.data);
+    const titleList = [];
+    const bodyList = $("table:nth-child(2)").children("tbody");
+
+    // bodyList를 순회하며 titleList에 find 내용을 저장
+    bodyList.each(function(i, elem) {
+      titleList[i] = {
+        title: $(this).find("tbody>tr:first-child>td:nth-child(1)").text(),
+        maker: $(this).find("tbody>tr:first-child>td:nth-child(2)").text(),
+        name: $(this).find("tbody>tr:first-child>td:nth-child(3)").text(),
+        money: $(this).find("tbody>tr:first-child>td:nth-child(4)").text()
+      };
+    });
+    return titleList;
+  })
+  .then(res => console.log(res)); // 저장된 결과를 출력
+```
+![크롤링](https://blogfiles.pstatic.net/MjAyMjA1MTNfMzQg/MDAxNjUyNDE2MTExMjEz.LCiW-eG7IczA0JxXCO3XVCjf-N47XjtU5-AfPivUNTQg.El1mF2tKI0HB37LaxzV2vLeujDMf4M3SyVLn66EQ514g.JPEG.alsl970/%ED%81%AC%EB%A1%A4%EB%A7%81.JPG?type=w2)
+
+***
+## 5월 04일
 - 전기차소개 페이지에 Tab기능넣기
 - React hooks로 Tab기능구현
 ```jsx
