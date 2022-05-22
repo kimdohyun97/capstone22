@@ -14,6 +14,87 @@
 
 ***
 [ 개발일지 ]
+## 5월 18일
+보조금페이지 테이블 데이터 json 파일로
+```jsx
+{
+    "data": [
+      {
+          "type": "승용",
+          "jejo": "현대자동차",
+          "name": "아이오닉5 2WD 롱레인지 20인치",
+          "money": "700"
+      },
+      {
+          "type": "승용",
+          "jejo": "현대자동차",
+          "name": "아이오닉5 2WD 롱레인지 19인치 빌트인 캠 미적용",
+          "money": "700"
+      },
+      {
+          "type": "승용",
+          "jejo": "현대자동차",
+          "name": "아이오닉5 2WD 롱레인지 19인치",
+          "money": "700"
+      },
+      {
+          "type": "승용",
+          "jejo": "현대자동차",
+          "name": "아이오닉5 AWD 롱레인지 20인치",
+          "money": "680"
+      },
+      {
+          "type": "승용",
+          "jejo": "현대자동차",
+          "name": "아이오닉5 AWD 롱레인지 19인치",
+          "money": "696"
+      },
+      ...
+```
+map함수 사용해서 table 생성
+```jsx
+class Subsidy extends Component {
+  state = {
+    posts: Posts.data,
+  };
+
+  componentDidMount() {
+    console.log(this.state.posts);
+  }
+
+  render() {
+    const postsData = this.state.posts;
+      return (
+        <div>
+          <div>
+	     <table>
+              <thead>
+                <tr>
+                  <th>구분</th>
+                  <th>제조사</th>
+                  <th>차종</th>
+                  <th>보조금</th>
+                </tr>
+              </thead>
+              <tbody>
+                {postsData.map((post, index) => (
+                  <tr key={index}>
+                    <th scope="row">{post.type}</th>
+                    <th>{post.jejo}</th>
+                    <th>{post.name}</th>
+                    <th>{post.money}</th>
+                  </tr>
+                ))}
+              </tbody>
+            </table>
+          </div>
+        </div>
+      );
+   }
+![테이블](https://blogfiles.pstatic.net/MjAyMjA1MTNfMzQg/MDAxNjUyNDE2MTExMjEz.LCiW-eG7IczA0JxXCO3XVCjf-N47XjtU5-AfPivUNTQg.El1mF2tKI0HB37LaxzV2vLeujDMf4M3SyVLn66EQ514g.JPEG.alsl970/%ED%81%AC%EB%A1%A4%EB%A7%81.JPG?type=w2)
+
+***
+
 ## 5월 11일
 - JavaScript 웹 크롤링
 - 전기차 구매보조금지원 페이지 크롤링
@@ -49,7 +130,8 @@ getHTML()
   })
   .then(res => console.log(res)); // 저장된 결과를 출력
 ```
-![크롤링](https://blogfiles.pstatic.net/MjAyMjA1MTNfMzQg/MDAxNjUyNDE2MTExMjEz.LCiW-eG7IczA0JxXCO3XVCjf-N47XjtU5-AfPivUNTQg.El1mF2tKI0HB37LaxzV2vLeujDMf4M3SyVLn66EQ514g.JPEG.alsl970/%ED%81%AC%EB%A1%A4%EB%A7%81.JPG?type=w2)
+
+![테이블](https://blogfiles.pstatic.net/MjAyMjA1MjJfMjU0/MDAxNjUzMTk4ODA0OTgx.MyMFcypHn8E8OX_C4bPgFkynh_Vfm23G02UgmSX5m9og.JInBKYWNAEHi5zKi5FFSKJhforFksiwMCqNyIiSvG5sg.JPEG.alsl970/money.JPG?type=w2)
 
 ***
 ## 5월 04일
