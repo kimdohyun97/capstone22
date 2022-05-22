@@ -51,7 +51,9 @@
       },
       ...
 ```
+
 map함수 사용해서 table 생성
+
 ```jsx
 class Subsidy extends Component {
   state = {
@@ -91,6 +93,8 @@ class Subsidy extends Component {
         </div>
       );
    }
+```
+
 ![테이블](https://blogfiles.pstatic.net/MjAyMjA1MTNfMzQg/MDAxNjUyNDE2MTExMjEz.LCiW-eG7IczA0JxXCO3XVCjf-N47XjtU5-AfPivUNTQg.El1mF2tKI0HB37LaxzV2vLeujDMf4M3SyVLn66EQ514g.JPEG.alsl970/%ED%81%AC%EB%A1%A4%EB%A7%81.JPG?type=w2)
 
 ***
