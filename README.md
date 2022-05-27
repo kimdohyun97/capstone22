@@ -19,8 +19,18 @@
 * table 오류수정 <br>
   - Warning: Invalid DOM property `rowspan`. Did you mean `rowSpan`?
   - Warning: Invalid DOM property `colspan`. Did you mean `colSpan`? <br>
-rowspan,colspan -> rowSpan,colSpan
+rowspan,colspan -> rowSpan,colSpan <br>
 
+테이블데이터 <br>
+class방식에서 hook방식으로 변경 <br>
+```jsx
+const Subsidy = () => {
+    const [ postsData, setPosts ] = useState();
+
+useEffect(() => {
+  setPosts(postList);
+    }, [ ])
+```
 
 ***
 
