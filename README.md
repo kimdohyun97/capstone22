@@ -15,9 +15,10 @@
 ***
 [ 개발일지 ]
 ## 5월 25일
-table 오류수정
-- Warning: Invalid DOM property `rowspan`. Did you mean `rowSpan`?
-- Warning: Invalid DOM property `colspan`. Did you mean `colSpan`? <br>
+콘솔창 열어서 오류 확인 후 수정
+* table 오류수정 <br>
+  - Warning: Invalid DOM property `rowspan`. Did you mean `rowSpan`?
+  - Warning: Invalid DOM property `colspan`. Did you mean `colSpan`? <br>
 rowspan,colspan -> rowSpan,colSpan
 
 
